@@ -1,0 +1,103 @@
+{
+    "name": "AMBOT",
+    "description": "Telegram group management bot.",
+    "keywords": [
+       "telegram",
+       "anime",
+       "group",
+       "manager",
+       "Am"
+    ],   
+ "repository": "https://github.com/AbhiModszYT",
+ "addons": [
+    {
+       "options": {
+          "version": "12"
+       },
+       "plan": "heroku-postgresql"
+    }
+ ],
+ "buildpacks": [
+    {
+      "url": "https://github.com/jonathanong/heroku-buildpack-ffmpeg-latest"
+    },
+    {
+      "url": "heroku/python"
+    }
+  ],
+ "env": {
+    "BOT_TOKEN": {
+       "description": "Your bot token. Get one from @BotFather duh",
+       "required": true,
+       "value": ""
+    },
+    "API_ID": {
+       "description": "Get API_ID from my.telegram.org, used for telethon based modules.",
+       "required": true,
+       "value": "3160248"
+    },
+    "API_HASH": {
+       "description": "Get API_HASH from my.telegram.org, used for telethon based modules.",
+       "required": true,
+       "value": "da866bcad3446898c4d4a20fa10b9d09"
+    },         
+    "DATABASE_URI": {
+       "description": "database url",
+       "required": true,
+       "value": ""
+    },
+"LOG_CHANNEL": {
+       "description": "Your Logs channel.",
+       "required": true,
+       "value": "-1001841879487"
+    },
+    "SUDO": {
+       "description": "sudo users ids ",
+       "required": true,
+       "value": "617426792 2024984460"
+    },
+    "DATABASE_NAME": {
+       "description": "database name",
+       "required": true,
+       "value": "superbanbot"
+    },
+    "SUPPORT_CHAT": {
+       "description": "channel @",
+       "value": "AMBOTYT"
+    },
+    "COMMAND_HANDLER": {
+       "description": "cmds lik /,.",
+       "required": true,
+       "value": "/ . !"
+    },      
+    "USER_SESSION": {
+       "description": "acc sessoin string",
+       "required": true,
+       "value": ""
+    },      
+    "OPENAI_API": {
+       "description": "open ai api key",
+       "required": false,
+       "value": "6204761408"
+    },
+    "BARD_API": {
+       "description": "BARD api key",
+       "required": false,
+       "value": ""
+    },
+    "CURRENCY_API": {
+       "description": "CURRENCY api key",
+       "required": false,
+       "value": ""
+    },
+    "FORWARD_FROM_CHAT_ID ": {
+       "description": "AUtoForwarder",
+       "value": "-100"
+    },
+    "FORWARD_TO_CHAT_ID": {
+       "description": "Forward To Chat ID",
+       "required": false,
+       "value": ""
+    } 
+ }
+}
